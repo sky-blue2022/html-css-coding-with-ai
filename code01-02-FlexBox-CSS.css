@@ -1,0 +1,17 @@
+/* Container holding the boxes */
+.container {
+  display: flex;
+  justify-content: space-around; /* Distributes space around the items */
+  align-items: center; /* Centers items vertically */
+  height: 100vh; /* Full viewport height */
+}
+
+/* Individual boxes */
+.box {
+  background-color: #4caf50; /* Green background */
+  color: white; /* White text */
+  padding: 20px; /* Some padding */
+  text-align: center; /* Center the text */
+  flex: 1; /* Flex-grow to make them grow and fill the space */
+  margin: 10px; /* Margin between boxes */
+}

@@ -1,0 +1,26 @@
+/* example-3.css */
+button {
+  display: inline-block;
+  padding: 10px;
+  margin: 5px;
+}
+
+.btn-1 {
+  background-color: lightblue;
+}
+
+.btn-2 {
+  background-color: lightgreen;
+  display: none;
+}
+
+.btn-3 {
+  background-color: lightcoral;
+}
+
+body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}

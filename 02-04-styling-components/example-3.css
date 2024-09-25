@@ -1,0 +1,33 @@
+.ai-list {
+  list-style-type: none; /* Remove default bullet points */
+  padding-left: 0; /* Remove default padding */
+  max-width: 500px; /* Limit the list's width */
+  margin: 0 auto; /* Center the list */
+}
+
+.ai-list li {
+  position: relative;
+  padding-left: 40px; /* Add space for custom icon */
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #333;
+  font-family: "Arial", sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.ai-list li::before {
+  content: "✔️"; /* Custom icon for each list item */
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.5rem;
+  color: #3498db;
+}
+
+.ai-list li:hover {
+  background-color: #f0f8ff; /* Light blue background on hover */
+  color: #3498db; /* Change text color to match icon on hover */
+  cursor: pointer;
+  border-radius: 4px; /* Soft rounded edges on hover */
+  padding-left: 35px; /* Adjust padding to keep it balanced */
+}

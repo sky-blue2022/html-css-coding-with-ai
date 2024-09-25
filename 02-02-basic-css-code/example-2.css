@@ -1,0 +1,25 @@
+/* example 1 */
+/* Apply the Roboto font family to the entire document */
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Style the H1 heading */
+h1 {
+  font-weight: bold;
+  color: darkblue;
+  font-size: 40px;
+}
+
+/* Style the paragraph text */
+p {
+  font-style: italic;
+  font-size: 18px;
+}
+
+/* example 2 */
+.container {
+  background-color: lightblue;
+  border: 4px solid darkblue;
+  border-radius: 20px;
+}

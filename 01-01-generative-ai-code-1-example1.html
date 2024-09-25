@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Three-Column Layout</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      header,
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+      }
+
+      .column {
+        background-color: lightblue;
+        padding: 20px;
+        flex: 1 1 30%; /* Flex-grow, flex-shrink, flex-basis */
+        margin: 10px;
+      }
+
+      footer {
+        margin-top: auto;
+      }
+
+      /* Responsive adjustments */
+      @media (max-width: 768px) {
+        .column {
+          flex: 1 1 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Responsive Layout Example</h1>
+    </header>
+
+    <main class="container">
+      <div class="column">
+        <h2>Column 1</h2>
+        <p>Content for the first column goes here.</p>
+      </div>
+      <div class="column">
+        <h2>Column 2</h2>
+        <p>Content for the second column goes here.</p>
+      </div>
+      <div class="column">
+        <h2>Column 3</h2>
+        <p>Content for the third column goes here.</p>
+      </div>
+    </main>
+
+    <footer>
+      <p>Footer Content</p>
+    </footer>
+  </body>
+</html>
