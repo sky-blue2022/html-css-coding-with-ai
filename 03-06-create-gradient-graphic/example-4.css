@@ -1,0 +1,19 @@
+.donut-chart {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: conic-gradient(red 0% 40%, blue 40% 70%, yellow 70% 100%);
+  position: relative;
+}
+
+.donut-chart::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: white; /* Or match the background color */
+}
