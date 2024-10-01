@@ -1,0 +1,19 @@
+.text-overlay {
+  position: relative;
+  width: 1000px;
+  height: 600px;
+  background-image: url("img-fireworks.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-overlay h1 {
+  color: white;
+  font-size: 4em;
+  text-align: center;
+  mix-blend-mode: screen;
+  opacity: 0.8; /* Increased visibility */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Added shadow */
+}

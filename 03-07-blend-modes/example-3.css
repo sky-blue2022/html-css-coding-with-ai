@@ -1,0 +1,25 @@
+.hover-blend {
+  position: relative;
+  width: 1000px;
+  height: 600px;
+}
+
+.hover-blend .background,
+.hover-blend .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+.hover-blend .overlay {
+  opacity: 0;
+}
+
+.hover-blend:hover .overlay {
+  opacity: 1;
+  mix-blend-mode: overlay;
+}
