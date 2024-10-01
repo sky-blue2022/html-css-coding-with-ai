@@ -1,0 +1,13 @@
+.cta-button {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  background-color: #ff6347;
+  color: white;
+  padding: 10px 30px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #ff4500;
+}

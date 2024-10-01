@@ -13,7 +13,7 @@
   color: white;
   font-size: 4em;
   text-align: center;
-  mix-blend-mode: screen;
-  opacity: 0.8; /* Increased visibility */
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Added shadow */
+  mix-blend-mode: overlay; /* Updated blend mode */
+  opacity: 0.8; /* Added opacity for a stronger effect */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Added shadow for better visibility */
 }
