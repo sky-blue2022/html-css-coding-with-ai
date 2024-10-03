@@ -1,0 +1,16 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  animation: rotateBox 5s linear infinite;
+  margin: 50px; /* Adding margins to ensure the box is fully visible */
+}
+
+@keyframes rotateBox {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

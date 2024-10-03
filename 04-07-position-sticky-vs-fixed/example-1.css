@@ -1,0 +1,36 @@
+body {
+  background: linear-gradient(
+      45deg,
+      #f3f3f3 25%,
+      transparent 25%,
+      transparent 75%,
+      #f3f3f3 75%,
+      #f3f3f3
+    ),
+    linear-gradient(
+      45deg,
+      #f3f3f3 25%,
+      #fff 25%,
+      #fff 75%,
+      #f3f3f3 75%,
+      #f3f3f3
+    );
+  background-size: 40px 40px; /* Simple grid pattern */
+}
+
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #0044cc;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  z-index: 1000;
+}
+
+.content {
+  margin-top: 50px; /* Space for the fixed navigation bar */
+  height: 2000px; /* Add height to demonstrate scrolling */
+}

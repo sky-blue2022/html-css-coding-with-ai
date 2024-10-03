@@ -1,0 +1,19 @@
+/* Using nth-child to target the second child, which could be any element type */
+.container p:nth-child(2) {
+  color: red;
+}
+
+/* Using nth-of-type to target the second paragraph element specifically */
+.container p:nth-of-type(2) {
+  background-color: yellow;
+}
+
+/* Using nth-child to target the third child, regardless of type */
+.container ul li:nth-child(3) {
+  font-weight: bold;
+}
+
+/* Using nth-of-type to target the third list item specifically within each list */
+.container ul li:nth-of-type(2) {
+  color: blue;
+}

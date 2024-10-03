@@ -1,0 +1,5 @@
+.highlight::before {
+  content: "Intro: ";
+  font-weight: bold;
+  color: green;
+}

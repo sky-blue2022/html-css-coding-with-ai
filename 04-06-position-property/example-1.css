@@ -1,0 +1,39 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.parent-box {
+  background-color: lightblue;
+  width: 500px;
+  height: 500px;
+  margin: 20px auto;
+  padding: 10px;
+  position: relative;
+}
+
+.child-box-1,
+.child-box-2 {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+.child-box-1 {
+  background-color: lightgreen;
+}
+
+.child-box-2 {
+  background-color: lightyellow;
+}
+
+/* Example 2: Applying position relative */
+.relative {
+  position: relative;
+  left: 200px; /* Move 200px to the right */
+  top: 100px; /* Move 100px down */
+}

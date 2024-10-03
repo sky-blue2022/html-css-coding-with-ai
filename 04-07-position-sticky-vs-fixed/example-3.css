@@ -1,0 +1,53 @@
+body {
+  background: linear-gradient(
+      45deg,
+      #f3f3f3 25%,
+      transparent 25%,
+      transparent 75%,
+      #f3f3f3 75%,
+      #f3f3f3
+    ),
+    linear-gradient(
+      45deg,
+      #f3f3f3 25%,
+      #fff 25%,
+      #fff 75%,
+      #f3f3f3 75%,
+      #f3f3f3
+    );
+  background-size: 40px 40px; /* Simple grid pattern */
+}
+
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  z-index: 1000;
+}
+
+.container {
+  display: flex;
+  margin-top: 60px; /* Space for the fixed header */
+}
+
+.sticky-sidebar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 60px; /* Ensures the sidebar is not hidden by the fixed header */
+  width: 200px;
+  background-color: #f1f1f1;
+  padding: 10px;
+  height: 300px;
+  margin-top: 500px; /* Starts the sidebar lower down the page */
+}
+
+.content {
+  margin-left: 220px;
+  padding: 20px;
+  height: 2000px; /* Add height to demonstrate scrolling */
+}

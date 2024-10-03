@@ -1,0 +1,9 @@
+.translate-box {
+  width: 100px;
+  height: 100px;
+  background-color: lightgreen;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  transition: transform 0.5s ease-in-out;
+}

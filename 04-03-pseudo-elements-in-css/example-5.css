@@ -1,0 +1,5 @@
+.highlight:hover::before {
+  content: "Hovered: ";
+  color: red;
+  font-weight: bold;
+}

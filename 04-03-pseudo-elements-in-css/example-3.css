@@ -1,0 +1,11 @@
+.highlight::before {
+  content: ">>> ";
+  color: green;
+  font-weight: bold;
+}
+
+.highlight::after {
+  content: " <<<";
+  color: blue;
+  font-weight: bold;
+}

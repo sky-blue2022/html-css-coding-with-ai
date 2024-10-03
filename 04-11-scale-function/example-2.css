@@ -1,0 +1,20 @@
+body {
+  margin: 20px;
+}
+
+.animated-box {
+  width: 150px;
+  height: 150px;
+  background-color: coral;
+  transform: scale(1);
+  transition: transform 0.7s ease-in-out;
+  margin: 40px auto;
+  text-align: center;
+  line-height: 150px;
+  font-size: 16px;
+  overflow: hidden;
+}
+
+.animated-box:hover {
+  transform: scale(1.5);
+}

@@ -1,0 +1,15 @@
+body {
+  margin: 20px;
+}
+
+.scaling-text {
+  font-size: 24px;
+  transform: scale(1);
+  transition: transform 0.3s ease;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.scaling-text:hover {
+  transform: scale(1.3);
+}

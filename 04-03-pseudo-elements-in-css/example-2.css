@@ -1,0 +1,5 @@
+.highlight::after {
+  content: " Goodbye!";
+  font-style: italic;
+  color: blue;
+}

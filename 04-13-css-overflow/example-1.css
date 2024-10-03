@@ -1,0 +1,9 @@
+.scroll-box {
+  width: 300px;
+  height: 100px;
+  overflow-x: scroll; /* Horizontal scroll bar */
+  white-space: nowrap; /* Prevent text wrapping */
+  background-color: lightgray; /* Optional background color */
+  padding: 10px;
+  border: 1px solid black; /* Optional border for clarity */
+}

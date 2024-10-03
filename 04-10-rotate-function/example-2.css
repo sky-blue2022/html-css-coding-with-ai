@@ -1,0 +1,11 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  margin: 50px; /* Adding margins to ensure the box is fully visible */
+  transition: transform 0.3s ease; /* Adding a smooth transition */
+}
+
+.box:hover {
+  transform: rotate(30deg) scale(1.5); /* Applying rotate and scale on hover */
+}

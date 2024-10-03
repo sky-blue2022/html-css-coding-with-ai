@@ -1,0 +1,28 @@
+/* Styling for the parent element */
+.parent-box {
+  width: 300px;
+  height: 300px;
+  background-color: lightblue; /* Light blue background for the parent */
+  margin-bottom: 20px;
+  position: relative;
+}
+
+/* Styling for the child element */
+.child-box {
+  width: 100px;
+  height: 100px;
+  background-color: lightgreen; /* Light green background for the child */
+  text-align: center;
+  line-height: 100px;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+/* Example of translate() function usage */
+.translated-box {
+  transform: translate(
+    100px,
+    50px
+  ); /* Moves the child 100px right and 50px down */
+}

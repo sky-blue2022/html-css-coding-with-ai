@@ -1,0 +1,9 @@
+input.focus-input {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+input.focus-input:focus {
+  border-color: #007bff;
+}

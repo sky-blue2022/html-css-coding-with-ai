@@ -1,0 +1,19 @@
+.scroll-container {
+  width: 300px;
+  height: 100px;
+  overflow-x: scroll; /* Enable horizontal scroll */
+  display: flex; /* Align items in a row */
+  background-color: lightgray; /* Optional background color for the container */
+  border: 1px solid black; /* Optional border for clarity */
+}
+
+.scroll-item {
+  min-width: 100px; /* Fixed width for each scroll item */
+  height: 100px; /* Fixed height for each scroll item */
+  margin-right: 10px; /* Add spacing between items */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the content inside the box */
+  color: black;
+  font-weight: bold;
+}

@@ -1,0 +1,40 @@
+body {
+  background: linear-gradient(
+      45deg,
+      #f3f3f3 25%,
+      transparent 25%,
+      transparent 75%,
+      #f3f3f3 75%,
+      #f3f3f3
+    ),
+    linear-gradient(
+      45deg,
+      #f3f3f3 25%,
+      #fff 25%,
+      #fff 75%,
+      #f3f3f3 75%,
+      #f3f3f3
+    );
+  background-size: 40px 40px; /* Simple grid pattern */
+}
+
+.container {
+  display: flex;
+  margin-left: 20px; /* Adds margin to avoid sidebar overlap with the main content */
+}
+
+.sticky-sidebar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20px;
+  width: 200px;
+  background-color: #f4f4f4;
+  padding: 15px;
+  margin-right: 20px;
+  height: 300px;
+}
+
+.content {
+  padding: 20px;
+  height: 2000px; /* Add height to demonstrate scrolling */
+}

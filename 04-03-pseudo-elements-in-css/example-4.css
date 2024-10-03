@@ -1,0 +1,8 @@
+.highlight::first-letter {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.highlight::first-line {
+  font-style: italic;
+}

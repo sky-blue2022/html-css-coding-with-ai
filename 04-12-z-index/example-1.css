@@ -1,0 +1,51 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.case {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #ccc;
+  margin: 20px;
+}
+
+.element {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: 25px;
+  left: 25px;
+}
+
+/* Case 1 styles */
+.case-1 .element-1 {
+  background-color: lightblue;
+  z-index: 1;
+}
+
+.case-1 .element-2 {
+  background-color: lightgreen;
+  top: 50px;
+  left: 50px;
+  z-index: 2;
+}
+
+/* Case 2 styles */
+.case-2 .element-1 {
+  background-color: lightblue;
+  z-index: 2;
+}
+
+.case-2 .element-2 {
+  background-color: lightgreen;
+  top: 50px;
+  left: 50px;
+  z-index: 1;
+}
