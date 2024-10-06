@@ -1,0 +1,27 @@
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
+}
+
+.slide-box {
+  font-size: 3rem; /* Increased font size */
+  font-weight: bold;
+  color: white;
+  background-color: darkgreen;
+  padding: 20px;
+  border-radius: 10px;
+  animation: slideIn 1.5s ease-in-out;
+}

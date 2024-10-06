@@ -1,0 +1,26 @@
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0; /* Light background for contrast */
+}
+
+.loading-spinner {
+  width: 100px; /* Increased size */
+  height: 100px; /* Increased size */
+  border: 10px solid lightgray;
+  border-top: 10px solid darkblue; /* High contrast color */
+  border-radius: 50%;
+  animation: spin 1.5s linear infinite;
+}

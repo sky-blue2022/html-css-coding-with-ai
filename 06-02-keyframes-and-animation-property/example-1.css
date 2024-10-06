@@ -1,0 +1,21 @@
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.fade-box {
+  font-size: 3rem; /* Increased font size */
+  font-weight: bold;
+  color: darkblue;
+  width: 100%;
+  text-align: center;
+  padding: 50px;
+  animation: fadeInOut 2s infinite;
+}

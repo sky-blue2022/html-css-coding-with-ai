@@ -1,0 +1,25 @@
+:root {
+  --default-margin: 20px;
+  --default-padding: 15px;
+  --button-padding: 10px 20px;
+  --container-width: 80%;
+}
+
+body {
+  margin: var(--default-margin);
+  padding: var(--default-padding);
+}
+
+.container {
+  width: var(--container-width);
+  margin: auto;
+  padding: var(--default-padding);
+}
+
+button {
+  padding: var(--button-padding);
+  border: none;
+  background-color: #3498db;
+  color: white;
+  border-radius: 5px;
+}

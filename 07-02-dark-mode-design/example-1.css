@@ -1,0 +1,69 @@
+/* Light and Dark Mode Colors */
+:root {
+  --background-light: white;
+  --text-light: black;
+  --background-dark: #121212;
+  --text-dark: #e0e0e0;
+}
+
+body {
+  background-color: var(--background-light);
+  color: var(--text-light);
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode {
+  background-color: var(--background-dark);
+  color: var(--text-dark);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+}
+
+/* Toggle Switch Styling */
+.theme-toggle {
+  position: relative;
+}
+
+.theme-toggle input {
+  display: none;
+}
+
+.toggle-label {
+  width: 60px;
+  height: 30px;
+  background-color: #ccc;
+  border-radius: 30px;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-label .toggle-button {
+  width: 26px;
+  height: 26px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: transform 0.3s ease;
+}
+
+input:checked + .toggle-label {
+  background-color: #4caf50;
+}
+
+input:checked + .toggle-label .toggle-button {
+  transform: translateX(30px);
+}
+
+main {
+  padding: 2em;
+}

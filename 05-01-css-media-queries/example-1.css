@@ -1,0 +1,27 @@
+.nav-menu {
+  display: flex;
+  justify-content: space-around;
+  background-color: #333;
+  padding: 10px;
+}
+
+.nav-menu li {
+  list-style: none;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    display: block;
+    background-color: #444;
+  }
+
+  .nav-menu li {
+    margin-bottom: 10px;
+  }
+}

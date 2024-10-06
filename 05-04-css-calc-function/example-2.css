@@ -1,0 +1,5 @@
+.text {
+  font-size: calc(16px + 1vw);
+  color: darkblue;
+  text-align: center;
+}

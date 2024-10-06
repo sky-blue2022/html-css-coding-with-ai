@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smooth Scrolling with Back to Top Button</title>
+    <link rel="stylesheet" href="example-2.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="#section1">Section 1</a>
+      <a href="#section2">Section 2</a>
+      <a href="#section3">Section 3</a>
+      <a href="#section4">Section 4</a>
+      <a href="#section5">Section 5</a>
+    </nav>
+
+    <div id="section1" class="section">
+      <h2>Section 1</h2>
+    </div>
+    <div id="section2" class="section">
+      <h2>Section 2</h2>
+    </div>
+    <div id="section3" class="section">
+      <h2>Section 3</h2>
+    </div>
+    <div id="section4" class="section">
+      <h2>Section 4</h2>
+    </div>
+    <div id="section5" class="section">
+      <h2>Section 5</h2>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop">Back to Top</button>
+
+    <script>
+      // Smooth scroll back to top
+      document
+        .getElementById("backToTop")
+        .addEventListener("click", function () {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+.transition-button {
+  background-color: lightblue;
+  padding: 20px 40px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.transition-button:hover {
+  background-color: lightgreen;
+}

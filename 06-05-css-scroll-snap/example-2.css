@@ -1,0 +1,52 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+.scroll-timeline {
+  display: flex;
+  scroll-snap-type: x mandatory;
+  width: 400vw; /* Make the width 4 times the viewport width */
+  height: 80vh; /* Increase the height for better visibility */
+}
+
+.snap-item {
+  min-width: 100vw;
+  scroll-snap-align: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: white;
+}
+
+/* Add background colors to each item for visual clarity and improve contrast */
+.item-1 {
+  background-color: #ff6b6b; /* Red */
+}
+
+.item-2 {
+  background-color: #4ecdc4; /* Teal */
+}
+
+.item-3 {
+  background-color: #ffe66d; /* Yellow */
+  color: black; /* Improved contrast for readability */
+}
+
+.item-4 {
+  background-color: #1a535c; /* Dark Blue */
+}
+
+/* Guide text to instruct users */
+.guide-text {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5rem;
+  color: black;
+}

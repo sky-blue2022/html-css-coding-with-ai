@@ -1,0 +1,11 @@
+.transition-box {
+  width: 100px;
+  height: 100px;
+  background-color: lightcoral;
+  transition: width 2s ease-in-out, background-color 1s ease-in;
+}
+
+.transition-box:hover {
+  width: 200px;
+  background-color: lightseagreen;
+}

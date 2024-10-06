@@ -1,0 +1,25 @@
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns on large screens */
+  gap: 10px; /* spacing between images */
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* For medium screens (tablets) */
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+  }
+}
+
+/* For small screens (phones) */
+@media (max-width: 480px) {
+  .gallery {
+    grid-template-columns: 1fr; /* 1 column on small screens */
+  }
+}

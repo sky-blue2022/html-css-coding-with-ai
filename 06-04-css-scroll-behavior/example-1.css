@@ -1,0 +1,60 @@
+html {
+  scroll-behavior: smooth; /* Apply smooth scrolling */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+  z-index: 1;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.section {
+  height: 100vh; /* Full viewport height for each section */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: white;
+  padding-top: 50px; /* To account for the fixed nav */
+  box-sizing: border-box;
+}
+
+#section1 {
+  background-color: lightcoral;
+}
+
+#section2 {
+  background-color: lightseagreen;
+}
+
+#section3 {
+  background-color: lightblue;
+}
+
+#section4 {
+  background-color: lightgoldenrodyellow;
+  color: black;
+}
+
+#section5 {
+  background-color: lightpink;
+}

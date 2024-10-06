@@ -1,0 +1,45 @@
+:root {
+  --primary-color: #2c3e50; /* Dark Slate Blue */
+  --secondary-color: #18bc9c; /* Light Turquoise */
+  --accent-color: #f39c12; /* Bright Amber */
+}
+
+body {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+header {
+  text-align: center;
+  padding: 50px;
+}
+
+h1 {
+  color: var(--accent-color);
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+button:hover {
+  background-color: var(--accent-color);
+  cursor: pointer;
+}

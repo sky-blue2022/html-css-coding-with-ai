@@ -1,0 +1,28 @@
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50px);
+  } /* Increased bounce height */
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightblue; /* Added background color for contrast */
+}
+
+.bounce-box {
+  font-size: 4rem; /* Increased font size */
+  font-weight: bold;
+  color: white;
+  background-color: darkorange; /* Added background color to the box */
+  padding: 20px 40px;
+  border-radius: 10px;
+  animation: bounce 1.5s infinite;
+}

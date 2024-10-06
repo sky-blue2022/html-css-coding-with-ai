@@ -1,0 +1,15 @@
+.hover-effect-button {
+  background-color: navy;
+  color: white;
+  border: 2px solid navy;
+  padding: 20px 40px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 1s, color 1s, border-color 1s;
+}
+
+.hover-effect-button:hover {
+  background-color: white;
+  color: navy;
+  border-color: white;
+}

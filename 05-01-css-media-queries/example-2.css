@@ -1,0 +1,26 @@
+.container {
+  display: block;
+  padding: 20px;
+}
+
+.content,
+.sidebar {
+  padding: 10px;
+  background-color: #9dd9ff;
+  margin-bottom: 10px;
+  height: 300px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+  }
+
+  .content {
+    width: 70%;
+  }
+
+  .sidebar {
+    width: 30%;
+  }
+}
