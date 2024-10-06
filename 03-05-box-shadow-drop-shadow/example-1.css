@@ -20,7 +20,7 @@ body {
   justify-content: center;
 }
 
-/* Box-Shadow effect on the first search icon */
+/* Box-Shadow effect on the first user icon */
 .box-shadow-example svg {
   width: 100px;
   height: 100px;
@@ -28,7 +28,7 @@ body {
   border-radius: 10px; /* Adding border-radius to make box-shadow more visible */
 }
 
-/* Drop-Shadow effect on the second search icon */
+/* Drop-Shadow effect on the second user icon */
 .drop-shadow-example svg {
   filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.5));
 }
