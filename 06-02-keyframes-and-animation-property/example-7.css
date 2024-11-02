@@ -42,7 +42,7 @@ html {
 
 /* Regular content sections */
 .content-section {
-  height: 20vh;
+  height: 5vh;
   display: flex;
   justify-content: center;
   align-items: center;
