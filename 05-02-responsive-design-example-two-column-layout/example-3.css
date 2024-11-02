@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+.column {
+  flex: 1;
+  padding: 10px;
+  background-color: lightgray;
+}
+
+@media (max-width: 768px) {
+  .column-2 {
+    display: none; /* Hide second column on mobile */
+  }
+}
