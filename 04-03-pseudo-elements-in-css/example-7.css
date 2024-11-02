@@ -19,7 +19,6 @@
   font-size: 1.3em;
   font-weight: bold;
   background: linear-gradient(45deg, #ff6ec4, #7873f5);
-  -webkit-background-clip: text;
   color: transparent;
   display: inline-block;
   width: 1.2em;
