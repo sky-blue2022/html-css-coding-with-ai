@@ -1,0 +1,73 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.content-section {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.parallax-section {
+  position: relative;
+  height: 200vh;
+  overflow: hidden;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.foreground-image {
+  position: sticky;
+  top: 20%; /* Adjusts the starting position */
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  transform: translateY(10%);
+}
+
+.foreground-image img {
+  width: 60%; /* Adjust image size */
+  max-width: 800px;
+  opacity: 0.9;
+  transform: translateY(
+    -10%
+  ); /* Adjusts the initial position for parallax effect */
+  will-change: transform;
+}
+
+/* Background Layer */
+.parallax-section:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("image-2.jpg"); /* Replace with your background image path */
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 0.5;
+  transform: translateZ(-1px) scale(1.5); /* Simulates depth for background */
+}
+
+/* Foreground Scroll-Based Parallax */
+.foreground-image img {
+  transform: translateY(
+    calc(-20vh + 10%)
+  ); /* Adjust for parallax effect relative to scroll */
+}

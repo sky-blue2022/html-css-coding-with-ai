@@ -1,0 +1,77 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+.parallax-section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Layer 1 - Slowest Rotation */
+.layer-1 {
+  background-color: #3498db;
+  animation: rotateSlow 20s infinite linear;
+}
+
+/* Layer 2 - Medium Rotation */
+.layer-2 {
+  background-color: #e74c3c;
+  animation: rotateMedium 15s infinite linear;
+}
+
+/* Layer 3 - Fastest Rotation */
+.layer-3 {
+  background-color: #2ecc71;
+  animation: rotateFast 10s infinite linear;
+}
+
+/* Keyframes for Rotation at Different Speeds */
+@keyframes rotateSlow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(5deg);
+  }
+}
+
+@keyframes rotateMedium {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+}
+
+@keyframes rotateFast {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}

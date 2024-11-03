@@ -1,0 +1,66 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+}
+
+.parallax-section {
+  height: 100vh;
+  background-image: url("image-1.jpg"); /* Replace with your image path */
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  /* Horizontal parallax effect */
+  background-position: 0px 50%;
+  animation: horizontal-scroll 10s linear infinite;
+}
+
+.parallax-section .content {
+  max-width: 600px;
+  padding: 20px;
+  background: rgba(
+    0,
+    0,
+    0,
+    0.6
+  ); /* Adds a semi-transparent background for readability */
+  border-radius: 8px;
+}
+
+@keyframes horizontal-scroll {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.regular-section {
+  height: 100vh;
+  background-color: #f3f3f3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.regular-section .content {
+  max-width: 600px;
+  padding: 20px;
+  color: #333;
+}
