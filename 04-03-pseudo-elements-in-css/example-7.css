@@ -1,27 +1,27 @@
 /* Remove default list style */
-.enhanced-marker-list {
+.gradient-marker-list {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-.enhanced-marker-list li {
-  display: flex; /* Use flexbox for alignment */
-  align-items: center; /* Center-align items vertically */
+.gradient-marker-list li {
+  position: relative;
   padding-left: 2em; /* Space for custom marker */
   margin-bottom: 0.8em;
   font-size: 1.1em;
+  display: flex;
+  align-items: center; /* Align items vertically */
 }
 
-/* Custom marker with a gradient circular icon */
-.enhanced-marker-list li::before {
-  content: "★"; /* Star icon as a custom marker */
-  font-size: 1.3em;
-  font-weight: bold;
+/* Custom gradient circle marker */
+.gradient-marker-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0.8em;
+  height: 0.8em;
+  border-radius: 50%; /* Make the marker circular */
   background: linear-gradient(45deg, #ff6ec4, #7873f5);
-  color: transparent;
-  display: inline-block;
-  width: 1.2em;
-  margin-right: 0.5em; /* Space between marker and text */
-  line-height: 1; /* Prevents offset in alignment */
+  translate: 10px;
 }
