@@ -21,6 +21,13 @@
   font-family: "Roboto", sans-serif;
 }
 
+.home-button:visited {
+  color: white; !important
+}
+.home-button:visited {
+  color: white; !important
+}
+
 /* Hover effect */
 .home-button:hover {
   background-color: #0056b3;
