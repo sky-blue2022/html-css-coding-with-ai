@@ -66,3 +66,5 @@ pnpm-lock.yaml
 07-03-what-is-scss/scss/example.css
 07-03-what-is-scss/scss/example.css.map
 zOUT_06-06-css-parallax/
+template/
+.DS_Store

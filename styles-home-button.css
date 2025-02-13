@@ -1,0 +1,34 @@
+/* Floating Home Button */
+.home-button {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  padding: 5px 10px;
+  background-color: #007bff; /* Primary blue */
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 25px; /* Round edges */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  z-index: 9999; /* Ensures it's on top */
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  white-space: nowrap;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Hover effect */
+.home-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
+
+/* Ensure proper placement within body or container */
+body {
+  position: relative; /* Ensures absolute positioning works properly */
+  min-height: 100vh; /* Avoids issues with short pages */
+}
