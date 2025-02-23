@@ -134,3 +134,37 @@ input:checked + .slider {
 input:checked + .slider:before {
   transform: translateX(26px);
 }
+
+/* Footer Styling */
+footer {
+  background-color: var(--header-background);
+  font-size: 0.7rem;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin: auto;
+}
+
+footer a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer-logo {
+  width: 50px;
+  height: auto;
+  padding-right: 5px;
+}
+
+/* Responsive layout adjustments for mobile screens */
+@media (max-width: 600px) {
+  .video-detail video {
+    width: 95%; /* Increased width for smaller screens */
+  }
+}
